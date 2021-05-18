@@ -1,14 +1,14 @@
 'use strict';
 
-function namechecker(){
-    return (req,res,next)=>{
-        if(req.body.name){
+function namechecker() {
+    return (req, res, next) => {
+        if (req.query.name) {
             next();
         }
-        else{
+        else {
             next('there is no name');
         }
     }
 }
 
-module.exports= namechecker;
+module.exports = namechecker;
