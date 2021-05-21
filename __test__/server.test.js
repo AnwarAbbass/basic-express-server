@@ -12,9 +12,20 @@ describe('server test', () => {
     expect(res.status).toBe(404);
   });
 
+  it('bad rout  ', async () => {
+    const res = await req.get('/bad')
+    expect(res.status).toBe(500);
+  });
+
   it('real rout ', async () => {
     const res = await req.get('/')
     expect(res.status).toEqual(200);
+  });
+
+  it('person rout ', async () => {
+    const res = await req.get('/person?name=Anwar')
+    expect(res.status).toEqual(200);
+    expect(res.body.name).toEqual('Anwar');
   });
 
 });

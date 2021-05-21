@@ -20,17 +20,17 @@ app.get('/person', namechecker(), (req, res) => {
     res.json({
         name: req.query.name
     });
-})
+});
 
-// app.get('/500', (req, res) => {
-//     throw new Error('SOMETHING IS ERROR');
-// });
+app.get('/bad', (req, res) => {
+    throw new Error('SOMETHING IS ERROR');
+});
 
 app.use('*', notFoundHandler);
 app.use(errorHandler);
 
 function start(PORT) {
-    app.listen(PORT, ()=>console.log(`you listen on port  ${PORT}`) )
+    app.listen(PORT, () => console.log(`you listen on port  ${PORT}`))
 }
 
 module.exports = {
