@@ -2,8 +2,8 @@
 
 ## Deployment Test
 Author: Anwar Abbass
-[tests report]()
-[heroku](https://basic-express-server-anwar.herokuapp.com/)
+[tests report](https://github.com/AnwarAbbass/basic-express-server/runs/2666346227?check_suite_focus=true)
+[heroku](https://anwarabbass-server-deploy-dev.herokuapp.com/)
 ## Setup
 `.env` requirements
 `dotenv`  requirements
