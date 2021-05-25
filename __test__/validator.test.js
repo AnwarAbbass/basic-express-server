@@ -16,5 +16,4 @@ describe('validator module', () => {
     expect(res.body).toStrictEqual({ name: 'Anwar' })
     expect(res.status).toEqual(200);
   });
-
 });

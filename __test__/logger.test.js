@@ -17,5 +17,4 @@ describe('logger module test', () => {
     expect(next).toHaveBeenCalledWith();
 
   });
-
 });
